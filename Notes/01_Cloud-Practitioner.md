@@ -12,6 +12,11 @@
   - [Groups](#groups)
   - [Roles](#roles)
   - [IAM Policies and Statements](#iam-policies-and-statements)
+- [S3](#s3)
+  - [S3 Storage Classes](#s3-storage-classes)
+  - [Versioning](#versioning)
+  - [Transfer Acceleration](#transfer-acceleration)
+- [!s3 transfer acceleration](#)
 - [Glossary](#glossary)
 
 ---
@@ -121,6 +126,31 @@ You manage permissions for IAM users, groups, and roles by creating a policy doc
   - `Resource` -- ex : `arn:aws:s3:::my_bucket`
   - `Effect` -- ex : `allow/deny` ![effect](./img/effect.png)
 
+---
+
+## S3
+
+Simple Storage Service
+
+- S3 is an `object storage service` for the cloud that is highly available.
+- any thing you upload to s3 `isn't public`, so you have to manually make it so if you want
+
+![object storage service](./img/s3.PNG)
+![object storage service](./img/s32.PNG)
+
+### S3 Storage Classes
+
+![classes](./img/s3-classes.PNG)
+
+### Versioning
+
+Versioning helps you prevent accidentally overwriting or deleting a file. In a versioning enabled bucket if the
+same object key is written multiple times, all of the writes will be recorded with the same object key but
+having different version IDs.
+
+### Transfer Acceleration
+
+![s3 transfer acceleration](./img/transfer%20acceleration.png)
 ---
 
 ## Glossary
