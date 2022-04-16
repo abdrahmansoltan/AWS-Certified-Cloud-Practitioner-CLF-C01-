@@ -2,7 +2,6 @@
 
 - [INDEX](#index)
 - [Source](#source)
-- [Full content](#full-content)
 - [Cloud Computing](#cloud-computing)
   - [Benefits of the Cloud](#benefits-of-the-cloud)
   - [Types of Cloud Computing](#types-of-cloud-computing)
@@ -26,6 +25,16 @@
   - [Using The Command Line](#using-the-command-line)
   - [load balancing](#load-balancing)
   - [Auto Scaling](#auto-scaling)
+  - [AWS Fargate](#aws-fargate)
+- [AWS Lambda](#aws-lambda)
+  - [Features](#features)
+- [Sequrity](#sequrity)
+  - [Web Application Firewall (WAF)](#web-application-firewall-waf)
+  - [Distributed Denial of Service (DDoS)](#distributed-denial-of-service-ddos)
+  - [Macie](#macie)
+  - [Config](#config)
+  - [Data encryption](#data-encryption)
+    - [Key Management Service (KMS)](#key-management-service-kms)
 - [Databases](#databases)
   - [types of databases](#types-of-databases)
   - [OLAP vs OLTP](#olap-vs-oltp)
@@ -34,10 +43,10 @@
   - [CloudFormation](#cloudformation)
   - [Elastic Beanstalk](#elastic-beanstalk)
 - [Pricing](#pricing)
-  - [EC2 Pricing](#ec2-pricing)
-  - [Lambda Pricing](#lambda-pricing)
-  - [S3 Pricing](#s3-pricing)
-  - [RDS Pricing](#rds-pricing)
+    - [EC2 Pricing](#ec2-pricing)
+    - [Lambda Pricing](#lambda-pricing)
+    - [S3 Pricing](#s3-pricing)
+    - [RDS Pricing](#rds-pricing)
   - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
   - [Application Discovery Service](#application-discovery-service)
 - [Billing](#billing)
@@ -60,7 +69,9 @@
 
 ## Source
 
-## [Full content](https://acloudguru.visme.co/view/mxz10wwn-s01-l00-table-of-contents)
+[Full content](https://acloudguru.visme.co/view/mxz10wwn-s01-l00-table-of-contents)
+
+---
 
 ## Cloud Computing
 
@@ -288,6 +299,79 @@ adds or replaces EC2 instances automatically across AZs, based on need and chang
 
 - `vertical scaling (scaling up)`
   - upgrades an EC2 instance by adding more power (CPU, RAM) to an existing server
+
+---
+
+### AWS Fargate
+
+Fargate is a `serverless` compute engine for containers.
+
+- `Serverless` means you don’t worry about provisioning, configuring, or scaling servers.
+- Fargate allows you to manage containers, like Docker.
+- Scales automatically
+
+---
+
+## AWS Lambda
+
+Lambda is a `serverless compute service` that lets you run code without managing servers.
+
+![Lambda](./img/Lambda.PNG)
+
+### Features
+
+- Supports popular programming languages like Java, Go, PowerShell, Node.js, C#, Python, and Ruby.
+- You author code using your favorite development environment or via the console.
+- Lambda can execute your code in response to events.
+- Lambda functions have a `15`-minute timeout.
+
+---
+
+## Sequrity
+
+### Web Application Firewall (WAF)
+
+`WAF` helps protect your web applications against common web attacks.
+
+- You can deploy a web application directly to an EC2 instance and protect it from cross-site scripting attacks using WAF. You can even deploy WAF on CloudFront as part of your `CDN` solution to block malicious traffic.
+
+  ![waf](./img/waf.PNG)
+
+---
+
+### Distributed Denial of Service (DDoS)
+
+A `DDoS` attack causes a traffic jam on a website or web application in an attempt to cause it to crash.
+
+![CDN](./img/ddos.PNG)
+
+---
+
+### Macie
+
+Macie helps you discover and protect sensitive data.
+
+- Macie is a data privacy service that helps you uncover and protect your sensitive data, such as personally identifiable information (PII) like credit card numbers, passport numbers, social security numbers, and more.
+
+---
+
+### Config
+
+allows you to assess, audit, and evaluate the configurations of your resources.
+
+- Config allows you to record configuration changes within your EC2 instances. You can view network, software, and operating system (OS) configuration changes, system-level updates, and more.
+
+---
+
+### Data encryption
+
+Data encryption encodes data so it cannot be read by unauthorized users.
+
+![alt](./img/encryption.PNG)
+
+#### Key Management Service (KMS)
+
+`KMS` allows you to generate and store encryption keys.
 
 ---
 
