@@ -18,6 +18,8 @@
 - [S3](#s3)
   - [S3 Storage Classes](#s3-storage-classes)
   - [Versioning](#versioning)
+- [Content Delivery Services](#content-delivery-services)
+  - [content delivery network (CDN)](#content-delivery-network-cdn)
   - [Transfer Acceleration](#transfer-acceleration)
   - [CloudFront](#cloudfront)
 - [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
@@ -28,6 +30,9 @@
   - [AWS Fargate](#aws-fargate)
 - [AWS Lambda](#aws-lambda)
   - [Features](#features)
+- [Networking Services: VPC and Subcomponents](#networking-services-vpc-and-subcomponents)
+  - [Virtual Private Cloud (VPC)](#virtual-private-cloud-vpc)
+  - [Route 53](#route-53)
 - [Sequrity](#sequrity)
   - [Web Application Firewall (WAF)](#web-application-firewall-waf)
   - [Distributed Denial of Service (DDoS)](#distributed-denial-of-service-ddos)
@@ -225,6 +230,18 @@ Versioning helps you prevent accidentally overwriting or deleting a file. In a v
 same object key is written multiple times, all of the writes will be recorded with the same object key but
 having different version IDs.
 
+---
+
+## Content Delivery Services
+
+### content delivery network (CDN)
+
+A CDN is a mechanism to deliver content quickly and efficiently based on `geographic location`.
+
+- `Latency` means the time it takes to respond to a request.
+
+---
+
 ### Transfer Acceleration
 
 ![s3 transfer acceleration](./img/transfer%20acceleration.png)
@@ -233,15 +250,19 @@ having different version IDs.
 
 ### CloudFront
 
-it uses groups of `edge locations` to deliver your content so it's a `CDN`
+CloudFront is a CDN that delivers data and applications globally with low latency.
 
-![alt](./img/CloudFront2.png)
+- it uses groups of `edge locations` to deliver your content so it's a `CDN`
+- Makes content available globally or restricts it based on location
+
+![alt](./img/CloudFront3.png)
 
 - every request is automatically routed to the nearest `edge location`
 
   ![alt](./img/CloudFront.png)
 
 - objects are cashed for the `TTL` (time to live)
+- `Geo-restriction` prevents users in certain countries from accessing content.
 
 ---
 
@@ -324,6 +345,27 @@ Lambda is a `serverless compute service` that lets you run code without managing
 - You author code using your favorite development environment or via the console.
 - Lambda can execute your code in response to events.
 - Lambda functions have a `15`-minute timeout.
+
+---
+
+## Networking Services: VPC and Subcomponents
+
+### Virtual Private Cloud (VPC)
+
+VPC is a service that allows you to create a secure private network in the AWS cloud where you launch your resources.
+
+![vpc](./img/vpc.PNG)
+![vpc](./img/vpc1.1.PNG)
+
+- A VPC spans Availability Zones in a Region
+- VPC peering allows you to connect 2 VPCs together.
+  ![vpc2](./img/vpc2.PNG)
+
+---
+
+### Route 53
+
+Route 53 is a `DNS service` that routes users to applications.
 
 ---
 
