@@ -19,4 +19,4 @@ This course is designed to obtain the knowledge and skills required to become an
 
 [Course Link](https://acloudguru.com/course/aws-certified-cloud-practitioner)
 <br>
-[Preview Certificate]()
+[Preview Certificate](https://verify.acloud.guru/FA2E1DF7930C)
