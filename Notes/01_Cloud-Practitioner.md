@@ -149,7 +149,7 @@ internet.
 
 ### Authentication ("Who") vs Authorization ("What")
 
-![iam](./img/auth.png)
+![iam](./img/auth.PNG)
 
 ---
 
@@ -255,7 +255,7 @@ CloudFront is a CDN that delivers data and applications globally with low latenc
 - it uses groups of `edge locations` to deliver your content so it's a `CDN`
 - Makes content available globally or restricts it based on location
 
-![alt](./img/CloudFront3.png)
+![alt](./img/CloudFront3.PNG)
 
 - every request is automatically routed to the nearest `edge location`
 
@@ -276,7 +276,7 @@ EC2 allows you to rent and manage `virtual servers` in the cloud.
 
 - The most common way to connect to Linux EC2 instances is via Secure Shell (`SSH`).
 
-  ![alt](./img/ssh.png)
+  ![alt](./img/ssh.PNG)
 
 ### EC2 Pricing Options
 
@@ -337,7 +337,7 @@ Fargate is a `serverless` compute engine for containers.
 
 Lambda is a `serverless compute service` that lets you run code without managing servers.
 
-![Lambda](./img/Lambda.PNG)
+![Lambda](./img/lambda.PNG)
 
 ### Features
 
